@@ -24,6 +24,14 @@ header {
   border-radius: 0 0 0 5rem;
 }
 
+@media (min-width: 768px) {
+  header {
+    background-image: url(/resources/img/headerbgdesk.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
 .nav-list {
   display: flex;
   justify-content: space-between;
@@ -79,18 +87,37 @@ header {
   display: none;
 }
 
+@media (min-width: 768px) {
+  .mobile-h1 {
+    display: none;
+  }
+
+  .desktop-h1 {
+    display: block;
+    font-weight: 700;
+    font-size: 4.8rem;
+    line-height: 6rem;
+  }
+}
+
 .container-intro {
   margin: 11.4rem 2.4rem;
+}
+
+@media (min-width: 768px) {
+  .container-intro {
+    margin: 26rem 25.5rem 35.9rem;
+  }
 }
 
 .container-intro p {
   font-size: 1.6rem;
   line-height: 2.4rem;
   font-weight: 400;
+  margin-bottom: 1.2rem;
 }
 
 .connect {
-  margin: 1.2rem 0;
   color: #7f8cff;
   font-size: 1.6rem;
   line-height: 2.4rem;
@@ -100,6 +127,7 @@ header {
 .social ul {
   display: flex;
   gap: 2rem;
+  margin-top: 1.4rem;
 }
 
 .medium {
