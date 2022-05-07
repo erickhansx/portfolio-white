@@ -1,0 +1,107 @@
+html {
+  font-size: 62.5%;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  background-color: #f7f7f9;
+  font-family: Poppins, sans-serif;
+  box-sizing: border-box;
+}
+
+/* MAIN PAGE */
+
+header {
+  background-image: url(/resources/img/headerbg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 0 0 0 5rem;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #6070ff;
+  margin-top: 5.8rem;
+  margin-left: 2.4rem;
+  margin-right: 2.4rem;
+}
+
+@media (min-width: 768px) {
+  .nav-list img {
+    display: none;
+  }
+}
+
+.nav-desktop-list {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .top-nav {
+    margin-top: 2.5rem;
+    margin-left: 15.5rem;
+    margin-right: 15.4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .nav-list {
+    display: inline-flex;
+  }
+
+  .nav-desktop-list {
+    display: inline-flex;
+    gap: 3.2rem;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: #344563;
+  }
+}
+
+.mobile-h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 5.2rem;
+}
+
+.desktop-h1 {
+  display: none;
+}
+
+.container-intro {
+  margin: 11.4rem 2.4rem;
+}
+
+.container-intro p {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  font-weight: 400;
+}
+
+.connect {
+  margin: 1.2rem 0;
+  color: #7f8cff;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  font-weight: 500;
+}
+
+.social ul {
+  display: flex;
+  gap: 2rem;
+}
+
+.medium {
+  padding-top: 0.2rem;
+}
