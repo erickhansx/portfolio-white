@@ -16,10 +16,17 @@ a {
   text-decoration: none;
 }
 
+h2 {
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 4.4rem;
+  color: #172b4d;
+}
+
 /* MAIN PAGE */
 
 header {
-  background-image: url(/resources/img/headerbg.png);
+  background-image: url("/resources/img/headerbg.png");
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -31,7 +38,7 @@ header {
 
 @media (min-width: 768px) {
   header {
-    background-image: url(/resources/img/headerbgdesk.svg);
+    background-image: url("/resources/img/headerbgdesk.svg");
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -212,13 +219,6 @@ header {
   background-color: #ebebff;
   padding: 0.4rem 1.2rem;
   border-radius: 8px;
-}
-
-h2 {
-  font-weight: 700;
-  font-size: 3.2rem;
-  line-height: 4.4rem;
-  color: #172b4d;
 }
 
 .main-button {
