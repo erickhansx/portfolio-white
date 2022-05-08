@@ -12,16 +12,36 @@ body {
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 4.4rem;
+  color: #172b4d;
+}
+
 /* MAIN PAGE */
 
 header {
-  background-image: url(/resources/img/headerbg.png);
+  background-image: url("/resources/img/headerbg.png");
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   flex-direction: column;
   background-color: #fff;
   border-radius: 0 0 0 5rem;
+  margin-bottom: 11.4rem;
+}
+
+@media (min-width: 768px) {
+  header {
+    background-image: url("/resources/img/headerbgdesk.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 
 .nav-list {
@@ -79,18 +99,37 @@ header {
   display: none;
 }
 
+@media (min-width: 768px) {
+  .mobile-h1 {
+    display: none;
+  }
+
+  .desktop-h1 {
+    display: block;
+    font-weight: 700;
+    font-size: 4.8rem;
+    line-height: 6rem;
+  }
+}
+
 .container-intro {
   margin: 11.4rem 2.4rem;
+}
+
+@media (min-width: 768px) {
+  .container-intro {
+    margin: 26rem 25.5rem 35.9rem;
+  }
 }
 
 .container-intro p {
   font-size: 1.6rem;
   line-height: 2.4rem;
   font-weight: 400;
+  margin-bottom: 1.2rem;
 }
 
 .connect {
-  margin: 1.2rem 0;
   color: #7f8cff;
   font-size: 1.6rem;
   line-height: 2.4rem;
@@ -100,8 +139,97 @@ header {
 .social ul {
   display: flex;
   gap: 2rem;
+  margin-top: 1.4rem;
 }
 
 .medium {
   padding-top: 0.2rem;
+}
+
+/* PROJECTS SECTION */
+
+.projects-container {
+  display: grid;
+  justify-content: center;
+}
+
+.tonic-1 {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  margin-bottom: 8.8rem;
+  margin-left: 2.4rem;
+  margin-right: 2.4rem;
+}
+
+.project-img {
+  margin: 1.6rem;
+}
+
+.tonic-1 h2 {
+  margin-left: 1.6rem;
+}
+
+.box-list {
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+  margin-left: 1.6rem;
+}
+
+.head-list {
+  font-weight: 600;
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+}
+
+.dot {
+  height: 8px;
+  width: 8px;
+  background-color: #bbb;
+  border-radius: 50%;
+}
+
+.text-grey {
+  color: #7a869a;
+  font-weight: 600;
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+}
+
+.project-paragraph {
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2.4rem;
+  color: #344563;
+  margin-top: 2rem;
+  margin-left: 1.6rem;
+  margin-right: 1.6rem;
+}
+
+.techology-list {
+  display: flex;
+  gap: 0.8rem;
+  margin-left: 1.6rem;
+  color: #6070ff;
+  margin-bottom: 4rem;
+}
+
+.tech-item {
+  background-color: #ebebff;
+  padding: 0.4rem 1.2rem;
+  border-radius: 8px;
+}
+
+.main-button {
+  margin-left: 1.6rem;
+}
+
+.main-button button {
+  color: #396df2;
+  background-color: white;
+  border: 1px solid #396df2;
+  border-radius: 0.8rem;
+  padding: 1rem;
+  margin-bottom: 4rem;
 }
